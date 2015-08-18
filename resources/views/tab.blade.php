@@ -6,9 +6,6 @@
         <meta name="description" content="">
         <title>Soho</title>
         
-        <!-- <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}"> -->
-        <!-- <link rel="stylesheet" href="{{ asset('/css/bootstrap-theme.min.css') }}"> -->
-        
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
     <body>
@@ -87,7 +84,7 @@
 
     <!-- /body here -->
         
-        <script type="text/javascript" src="/js/lib/lodash.min.js"></script>
+        <script type="text/javascript" src="/js/lodash.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="/js/plugins.js"></script>
