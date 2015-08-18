@@ -11,6 +11,19 @@
     right: 0px;
 }
 
+.text-bulina {
+    position: absolute;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    width: 84px;
+    height: 62px;
+    top: 588px;
+    right: 100px;
+}
+
 .big-text {
 	position: absolute;
 	left: 43px;
@@ -31,4 +44,41 @@
 	font-weight: 400;
 	width: 208px;
 	height: 58px;
+}
+
+.text-norm {
+	position: absolute;
+	color:  #000000;
+	font-size: 15px;/* Approximation due to font substitution */
+	font-weight: 400;
+}
+
+.par1 {
+	top: 490px;
+    left: 43px;
+    width: 355px;
+    height: 33px;
+}
+
+.par2 {
+    top: 540px;
+    left: 43px;
+    width: 381px;
+    height: 31px;
+}
+
+.par3 {
+	top: 590px;
+    left: 43px;
+    width: 393px;
+    height: 52px;
+}
+
+.stripe-red {
+	position: absolute;
+    top: 690px;
+    left: 43px;
+	width: 703px;
+	height: 2px;
+	background-color: #cc0000;
 }

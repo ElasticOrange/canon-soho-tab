@@ -17,9 +17,20 @@
 
         <div class="content">
             <img src="/img/header-with-logo.png">
+            
             <img class="premii" src="/img/premii.png">
+            
+            <span class="text-bulina">Cadou router wifi sau rucsac</span>
+            
             <p class="big-text">Aleg să-mi urmez visele.</p>
             <p class="big-text-sec">Alegerea mea este Canon.</p>
+
+            <p class="text-norm par1">Atingerea obiectivelor propriei afaceri stă în mâinile echipe tale.</p>
+            <p class="text-norm par2">Echipamentele pot face diferenta. Alege Canon si poti beneficia de solutia perfectă.</p>
+            <p class="text-norm par3">În plus, pentru produsele achizitionate din gama imprimantelor laser si scannerelor mobile vei primi, 
+            la alegere, un router wifi sau un rucsac. Mai multe detalii în magazinele partenere Canon.</p>
+
+            <div class="stripe-red"></div>
         </div>
 
     <!-- /body here -->
