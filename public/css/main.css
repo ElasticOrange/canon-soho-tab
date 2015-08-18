@@ -205,13 +205,13 @@ body {
 .numebox {
 	position: absolute;
     top: -3px;
-    left: 175px;
+    left: 150px;
 }
 
 .emailbox {
 	position: absolute;
 	top: 50px;
-	left: 175px;
+	left: 150px;
 }
 
 .emaillabel {

@@ -26,7 +26,6 @@
                 fjs.parentNode.insertBefore(js,fjs);
             }}(document, 'script', 'twitter-wjs');
         </script>
-    <!-- body here -->
 
         <div class="content">
             <img src="/img/header-with-logo.png">
@@ -79,10 +78,7 @@
                     <div type="submit" data-buton="true" class="btn-trimite"><span class="btn-inscrie">Înscrie-te</span></div>
                 </form>
             </div>
-
         </div>
-
-    <!-- /body here -->
         
         <script type="text/javascript" src="/js/lodash.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
