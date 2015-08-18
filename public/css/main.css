@@ -135,3 +135,122 @@
     right: 84px;
 }
 
+.tabel {
+	position: absolute;
+	top: 710px;
+    left: 43px;
+}
+
+.text-bottom {
+	position: absolute;
+	color: #000000;
+	font-size: 12.6px; /* Approximation due to font substitution */
+	font-weight: 400;
+	top: 1630px;
+	left: 43px;
+}
+
+.text-bottom-sec {
+	position: absolute;
+	color: #000000;
+	font-size: 12.6px; /* Approximation due to font substitution */
+	font-weight: 400;
+	top: 1650px;
+	left: 43px;
+}
+
+.elipse {
+	position: absolute;
+	top: 1700px;
+	left: 43px;
+}
+
+.abonare {
+	position: absolute;
+	top: 1710px;
+	left: 75px;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.form-inscriere {
+	position: absolute;
+	top: 1760px;
+	left: 75px;
+}
+
+.forlabel {
+	color: #000000;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.form-control {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #ffffff;
+	width: 192px;
+	height: 30px;
+}
+
+.numebox {
+	position: absolute;
+    top: -3px;
+    left: 125px;
+}
+
+.emailbox {
+	position: absolute;
+	top: 50px;
+	left: 125px;
+}
+
+.emaillabel {
+	position: absolute;
+	top: 60px;
+	left: 0px;
+}
+
+.checkbox2 {
+	position: absolute;
+	top: 120px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #ffffff;
+	width: 17px;
+	height: 17px;
+	margin: 0;
+}
+
+.checkbox3 {
+	position: absolute;
+	margin: 0;
+	top: 120px;
+	left: 20px;
+	color: #000000;
+	font-size: 12px; /* Approximation due to font substitution */
+	font-weight: 400;
+	width: 500px;
+}
+
+.btn-trimite {
+	position: absolute;
+	top: 150px;
+	background-color:  #cc0000;
+	width: 137px;
+	height: 37px;
+	margin-bottom: 40px;
+    display: table;
+}
+
+.btn-inscrie {
+	color:  #ffffff;
+	font-size: 17px;/* Approximation due to font substitution */
+	font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
