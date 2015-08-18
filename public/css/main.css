@@ -5,6 +5,22 @@
 	margin-right: auto;
 }
 
+.fb-button {
+    position: absolute;
+    top: 320px;
+    right: 100px;
+    width: 60px;
+    height: 20px;
+}
+
+.tw-button {
+	position: absolute;
+    top: 320px;
+    right: 10px;
+    width: 80px;
+    height: 20px;
+}
+
 .premii {
 	position: absolute;
 	top: 343px;
@@ -82,3 +98,40 @@
 	height: 2px;
 	background-color: #cc0000;
 }
+
+.img-premii-laser {
+	position: absolute;
+	color: #000000;
+	font-size: 11px;
+	font-weight: 400;
+    top: 446px;
+    right: 156px;
+}
+
+.img-premii-router {
+	position: absolute;
+	color: #000000;
+	font-size: 11px;
+	font-weight: 400;
+	top: 446px;
+    right: 66px;
+}
+
+.img-premii-scanner {
+	position: absolute;
+	color: #000000;
+	font-size: 11px;
+	font-weight: 400;
+    top: 526px;
+    right: 169px;
+}
+
+.img-premii-rucsac {
+	position: absolute;
+	color: #000000;
+	font-size: 11px;
+	font-weight: 400;
+    top: 526px;
+    right: 84px;
+}
+

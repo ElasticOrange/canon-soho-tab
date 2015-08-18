@@ -12,13 +12,40 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1623647431227519";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 
+        <script>!function(d,s,id) {
+            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){js=d.createElement(s);
+                js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js,fjs);
+            }}(document, 'script', 'twitter-wjs');
+        </script>
     <!-- body here -->
 
         <div class="content">
             <img src="/img/header-with-logo.png">
-            
+            <div class="fb-button">
+                <div class="fb-share-button" data-href="https://www.facebook.com/canonromania" data-layout="button"></div>
+            </div>
+
+            <div class="tw-button">
+                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            </div>
+
             <img class="premii" src="/img/premii.png">
+                <span class="img-premii-laser">Echipament Laser</span>
+                <span class="img-premii-router">Router wifi</span>
+                <span class="img-premii-scanner">Scanner Mobil</span>
+                <span class="img-premii-rucsac">Rucsac</span>
             
             <span class="text-bulina">Cadou router wifi sau rucsac</span>
             
