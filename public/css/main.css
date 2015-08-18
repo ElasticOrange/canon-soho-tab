@@ -205,13 +205,13 @@ body {
 .numebox {
 	position: absolute;
     top: -3px;
-    left: 125px;
+    left: 175px;
 }
 
 .emailbox {
 	position: absolute;
 	top: 50px;
-	left: 125px;
+	left: 175px;
 }
 
 .emaillabel {
@@ -240,7 +240,7 @@ body {
 	color: #000000;
 	font-size: 12px; /* Approximation due to font substitution */
 	font-weight: 400;
-	width: 500px;
+	width: 690px;
 }
 
 .btn-trimite {
