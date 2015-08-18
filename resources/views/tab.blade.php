@@ -74,7 +74,7 @@
                     <br>
 
                     <input type="checkbox" class="checkbox2" name="contact" data-checkbox="true" value="1" checked="checked"> 
-                    <h4 class="checkbox3">Sunt de acord să primesc informaţii cu privire la promoţiile viitoare de la Canon şi partenerii săi.</h4>
+                    <h4 class="checkbox3">Sunt de acord să primesc informaţii cu privire la promoţiile viitoare de la Canon şi partenerii săi.</h4><br />
                     
                     <div type="submit" data-buton="true" class="btn-trimite"><span class="btn-inscrie">Înscrie-te</span></div>
                 </form>
