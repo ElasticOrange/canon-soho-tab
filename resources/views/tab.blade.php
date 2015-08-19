@@ -60,10 +60,9 @@
             <p class="text-bottom">*Imaginile produselor sunt cu titlu de prezentare</p>
             <p class="text-bottom-sec">Perioada promotiei 1 august - 30 septembrie 2015</p>
 
-            <img class="elipse" src="/img/ellipse-bottom.png">
-            <span class="abonare">Doreşti să fii la curent cu noutăţile Canon? Abonează-te la newsletter-ul nostru, mai jos.</span>
-
             <div class="form-inscriere">
+                <img class="elipse" src="/img/ellipse-bottom.png">
+                <span class="abonare">Doreşti să fii la curent cu noutăţile Canon? Abonează-te la newsletter-ul nostru, mai jos.</span>
                 <form action="/" data-form="true" method="post">
                     <label for="nume" class="forlabel">Nume și Prenume</label>
                     <input type="text"  value="{{ old('nume') }}" data-nume="true" name="nume" class="form-control numebox"><br /><br />
@@ -78,7 +77,12 @@
                     <div type="submit" data-buton="true" class="btn-trimite"><span class="btn-inscrie">Înscrie-te</span></div>
                 </form>
             </div>
+
+            <div class="invizibil">
+                <h3 class="felicitari">Te-ai abonat cu succes la newsletter-ul nostru.</h3>
+            </div>
         </div>
+
         
         <script type="text/javascript" src="/js/lodash.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
