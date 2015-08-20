@@ -1,4 +1,4 @@
-html { 
+html {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, nevis, sans-serif;
 }
 
@@ -145,7 +145,6 @@ body {
 .tabel {
 	position: absolute;
 	top: 710px;
-    left: 43px;
 }
 
 .text-bottom {
@@ -153,7 +152,7 @@ body {
 	color: #000000;
 	font-size: 12.6px; /* Approximation due to font substitution */
 	font-weight: 400;
-	top: 1630px;
+	top: 1570px;
 	left: 43px;
 }
 
@@ -162,7 +161,7 @@ body {
 	color: #000000;
 	font-size: 12.6px; /* Approximation due to font substitution */
 	font-weight: 400;
-	top: 1650px;
+	top: 1590px;
 	left: 43px;
 }
 
@@ -176,7 +175,7 @@ body {
     position: absolute;
     top: -62px;
     left: -5px;
-    width: 640px;
+    width: 690px;
     color: #000000;
     font-size: 16px;
     font-weight: 400;
@@ -184,7 +183,7 @@ body {
 
 .form-inscriere {
 	position: absolute;
-	top: 1760px;
+	top: 1710px;
 	left: 75px;
 }
 
@@ -294,4 +293,93 @@ body {
     width: 238px;
     top: 60px;
     left: 30px;
+}
+
+.shareemail {
+	position: absolute;
+	top: 320px;
+    right: 170px;
+}
+
+.modal {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 3;
+	top: -100px;
+	width: 320px;
+	height: 289px;
+	background-color: #ffffff;
+	border: 1px solid black;
+}
+
+.mailsend {
+	border-style: solid;
+	width: 270px;
+	height: 23px;
+	left: 24px;
+	position: absolute;
+}
+
+.msg-body {
+	margin: 0px;
+    width: 270px;
+    height: 132px;
+    top: 113px;
+    left: 24px;
+    position: absolute;
+    font-size: 11px;
+}
+
+.modal-trimite {
+	background-color:  #cc0000;
+	width: 70px;
+	height: 18px;
+	position: absolute;
+	top: 255px;
+	left: 24px;
+	display: table;
+    cursor: pointer;
+}
+
+.modal-send {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 13px;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.grey-mesaj {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 13px;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.grey {
+    background-color: #7e7e7e;
+    width: 270px;
+    height: 23px;
+    position: absolute;
+    top: 90px;
+    left: 24px;
+    display: table;
+}
+
+#modal-background {
+	/*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .90;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=90);
+    z-index: 3;
 }

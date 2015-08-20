@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <title>Soho</title>
-        
+
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
     <body>
@@ -29,6 +29,9 @@
 
         <div class="content">
             <img src="/img/header-with-logo.png">
+            <div class="shareemail">
+                <img src="/img/shareemail.png">
+            </div>
             <div class="fb-button">
                 <div class="fb-share-button" data-href="https://www.facebook.com/canonromania" data-layout="button"></div>
             </div>
@@ -42,15 +45,15 @@
                 <span class="img-premii-router">Router wifi</span>
                 <span class="img-premii-scanner">Scanner Mobil</span>
                 <span class="img-premii-rucsac">Rucsac</span>
-            
+
             <span class="text-bulina">Cadou router wifi sau rucsac</span>
-            
+
             <p class="big-text">Aleg să-mi urmez visele.</p>
             <p class="big-text-sec">Alegerea mea este Canon.</p>
 
             <p class="text-norm par1">Atingerea obiectivelor propriei afaceri stă în mâinile echipe tale.</p>
             <p class="text-norm par2">Echipamentele pot face diferenta. Alege Canon si poti beneficia de solutia perfectă.</p>
-            <p class="text-norm par3">În plus, pentru produsele achizitionate din gama imprimantelor laser si scannerelor mobile vei primi, 
+            <p class="text-norm par3">În plus, pentru produsele achizitionate din gama imprimantelor laser si scannerelor mobile vei primi,
             la alegere, un router wifi sau un rucsac. Mai multe detalii în magazinele partenere Canon.</p>
 
             <div class="stripe-red"></div>
@@ -71,9 +74,9 @@
                     <input type="email" value="{{ old('email') }}" data-email="true" name="email" class="form-control emailbox">
                     <br>
 
-                    <input type="checkbox" class="checkbox2" name="contact" data-checkbox="true" value="1" checked="checked"> 
+                    <input type="checkbox" class="checkbox2" name="contact" data-checkbox="true" value="1" checked="checked">
                     <h4 class="checkbox3">Sunt de acord să primesc informaţii cu privire la promoţiile viitoare de la Canon şi partenerii săi.</h4><br />
-                    
+
                     <div type="submit" data-buton="true" class="btn-trimite"><span class="btn-inscrie">Înscrie-te</span></div>
                 </form>
             </div>
@@ -83,13 +86,33 @@
             </div>
         </div>
 
-        
+        <div id="modal-background"></div>
+        <div class="modal">
+            <form action="mail.php" data-modal="true" method="post"><br />
+                <input type="email" data-mymodal="true" class="mailsend" name="myemail" placeholder="Adresa mea de email"><br /><br />
+                <input type="email" data-hismodal="true" class="mailsend" name="hisemail" placeholder="Adresa de email a destinatarului">
+                <div class="grey"><span class="grey-mesaj">Mesaj</span></div>
+                <textarea class="msg-body">
+Salut,
+
+Am găsit promoția Canon pentru echipamente laser și scannere mobile,
+la care primești Cadou un rucsac sau
+un router WiFi, valabilă până la
+31 septembrie.
+Pentru detalii, intră aici:
+https://apps.facebook.com/promotie-soho
+                </textarea>
+                <div type="submit" data-email="true" class="modal-trimite"><span class="modal-send">Trimite</span></div>
+
+            </form>
+        </div>
+
         <script type="text/javascript" src="/js/lodash.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="/js/plugins.js"></script>
         <script src="/js/main.js"></script>
-        
+
         <script src="/js/form.js"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
