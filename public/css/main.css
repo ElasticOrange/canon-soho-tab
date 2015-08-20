@@ -299,14 +299,16 @@ body {
 	position: absolute;
 	top: 320px;
     right: 170px;
+    cursor: pointer;
 }
 
 .modal {
+	display: none;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 3;
-	top: -100px;
+	top: -900px;
 	width: 320px;
 	height: 289px;
 	background-color: #ffffff;
@@ -370,7 +372,7 @@ body {
 }
 
 #modal-background {
-	/*display: none;*/
+	display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -382,4 +384,24 @@ body {
     -moz-opacity: .5;
     filter: alpha(opacity=90);
     z-index: 3;
+}
+
+a.boxclose{
+    position: absolute;
+	top: -10px;
+	right: -10px;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+}
+
+.boxclose:before {
+    content: "×";
 }
