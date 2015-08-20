@@ -12,4 +12,35 @@ $(document).ready(function() {
             $('#modal-background').fadeOut('fast');
         });
 	});
+
+	$('[data-email=true]').click(ajax_email);
+
+	function ajax_email(e)
+	{
+		var p;
+		e.preventDefault();
+		p = {
+			myemail: $('[data-mymodal=true]').val(),
+			hisemail: $('[data-hismodal=true]').val(),
+			message: $('.msg-body').val(),
+			};
+		return $.ajax(
+		{
+			url: $('[data-modal=true]').attr('action'),
+			type: $('[data-modal=true]').attr('method'),
+			data: p,
+			content: 'json',
+			success: function(mail)
+			{
+				if(mail.status === 'OK')
+				{
+					console.log('OK');
+				}
+				else
+				{
+					console.log('Error');
+				}
+			}
+		});
+	};
 });

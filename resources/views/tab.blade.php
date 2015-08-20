@@ -88,7 +88,7 @@
 
         <div id="modal-background"></div>
         <div class="modal">
-            <form action="mail.php" data-modal="true" method="post"><br />
+            <form action="/mail" data-modal="true" method="post"><br />
                 <a class="boxclose" id="boxclose"></a>
                 <input type="email" data-mymodal="true" class="mailsend" name="myemail" placeholder="Adresa mea de email"><br /><br />
                 <input type="email" data-hismodal="true" class="mailsend" name="hisemail" placeholder="Adresa de email a destinatarului">

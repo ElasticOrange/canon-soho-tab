@@ -313,6 +313,9 @@ body {
 	height: 289px;
 	background-color: #ffffff;
 	border: 1px solid black;
+	box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
 }
 
 .mailsend {
@@ -325,12 +328,13 @@ body {
 
 .msg-body {
 	margin: 0px;
-    width: 270px;
+    width: 269px;
     height: 132px;
-    top: 113px;
+    top: 112px;
     left: 24px;
     position: absolute;
     font-size: 11px;
+    resize: none;
 }
 
 .modal-trimite {

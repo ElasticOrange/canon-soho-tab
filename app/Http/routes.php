@@ -15,3 +15,5 @@ Route::get('/', 'HomeController@index');
 Route::post('/', 'HomeController@index');
 
 Route::post('/', 'HomeController@postIndex');
+
+Route::post('/mail', 'HomeController@send');
