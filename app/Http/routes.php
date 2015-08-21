@@ -13,4 +13,4 @@
 
 Route::controller('/', 'HomeController');
 
-Route::post('/', 'HomeController@getIndex');
+// Route::post('/', 'HomeController@getIndex');

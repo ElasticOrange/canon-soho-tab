@@ -19,6 +19,11 @@ class HomeController extends Controller
 		return view('tab');
 	}
 
+    public function postIndex()
+	{
+		return view('tab');
+	}
+
 	public function postFormIndex(CreateEntryRequest $request)
 	{
 		$input = $request->all();
