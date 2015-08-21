@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 	function ajax_email(e)
 	{
-		var p;
+		var c;
 		e.preventDefault();
 		c = {
 			myemail: $('[data-mymodal=true]').val(),
@@ -30,28 +30,31 @@ $(document).ready(function() {
 			type: $('[data-modal=true]').attr('method'),
 			data: c,
 			content: 'json',
-			success: function(mail)
-			{
-				if(mail.status === 'OK')
-				{
-					console.log('OK');
-				}
-				else
-				{
-					console.log('Error');
-				}
-			},
+			success: function(s)
+            {
+                if(s.status === 'OK')
+                {
+                    $('.modal').animate({'top':'-900px'}, 500, function(){
+			            $('#modal-background').fadeOut('fast');
+			        });
+                    console.log("OK");
+                }
+                else
+                {
+                    console.log("Error");
+                }
+            },
             error: function(c)
             {
-                // if (typeof p.responseJSON.myemail != 'undefined')
-                // {
-                //     console.log('Nu exista myemail');
-                // }
+                if (typeof c.responseJSON.myemail != 'undefined')
+                {
+                    console.log('Nu exista myemail');
+                }
 
-                // if (typeof p.responseJSON.hisemail != 'undefined')
-                // {
-                //     console.log('Nu exista hisemail');
-                // }
+                if (typeof c.responseJSON.hisemail != 'undefined')
+                {
+                    console.log('Nu exista hisemail');
+                }
 
                 console.log(c);
             }

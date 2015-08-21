@@ -38,7 +38,6 @@ class HomeController extends Controller
 	    $myemail = $request->get('myemail');
 	    $hisemail = $request->get('hisemail');
 		$body = nl2br($request->get('message'));
-		print_r($body);
 
 	    Mail::send('emails.share', ['body' => $body], function ($message) use ($myemail, $hisemail, $body) {
             $message->from($myemail);
