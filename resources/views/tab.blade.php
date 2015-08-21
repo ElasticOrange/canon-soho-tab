@@ -66,7 +66,7 @@
             <div class="form-inscriere">
                 <img class="elipse" src="/img/ellipse-bottom.png">
                 <span class="abonare">Doreşti să fii la curent cu noutăţile Canon? Abonează-te la newsletter-ul nostru, mai jos.</span>
-                <form action="/" data-form="true" method="post">
+                <form action="{{ action('HomeController@postFormIndex') }}" data-form="true" method="post">
                     <label for="nume" class="forlabel">Nume și Prenume</label>
                     <input type="text"  value="{{ old('nume') }}" data-nume="true" name="nume" class="form-control numebox"><br /><br />
 
