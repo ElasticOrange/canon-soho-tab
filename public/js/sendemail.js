@@ -1,14 +1,14 @@
 $(document).ready(function() {
 
 	$('.shareemail').click(function(){
-        $('#modal-background').fadeIn(200,function(){
-            $('.modal').css({'display':'block'}).animate({'top':'-150px'},200);
+        $('#modal-background').fadeIn(200, function(){
+            $('.modal').css({'display':'block'}).animate({'top':'-150px'}, 200);
         });
         return false;
     });
 
 	$('#boxclose').click(function(){
-		$('.modal').animate({'top':'-900px'},500,function(){
+		$('.modal').animate({'top':'-900px'}, 500, function(){
             $('#modal-background').fadeOut('fast');
         });
 	});
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	{
 		var p;
 		e.preventDefault();
-		p = {
+		c = {
 			myemail: $('[data-mymodal=true]').val(),
 			hisemail: $('[data-hismodal=true]').val(),
 			message: $('.msg-body').val(),
@@ -28,7 +28,7 @@ $(document).ready(function() {
 		{
 			url: $('[data-modal=true]').attr('action'),
 			type: $('[data-modal=true]').attr('method'),
-			data: p,
+			data: c,
 			content: 'json',
 			success: function(mail)
 			{
@@ -40,7 +40,21 @@ $(document).ready(function() {
 				{
 					console.log('Error');
 				}
-			}
+			},
+            error: function(c)
+            {
+                // if (typeof p.responseJSON.myemail != 'undefined')
+                // {
+                //     console.log('Nu exista myemail');
+                // }
+
+                // if (typeof p.responseJSON.hisemail != 'undefined')
+                // {
+                //     console.log('Nu exista hisemail');
+                // }
+
+                console.log(c);
+            }
 		});
 	};
 });

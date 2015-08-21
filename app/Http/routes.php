@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::post('/', 'HomeController@index');
+// Route::get('/', 'HomeController@index');
+// // Route::post('/', 'HomeController@index');
 
-Route::post('/', 'HomeController@postIndex');
+// Route::post('/', 'HomeController@postIndex');
 
-Route::post('/mail', 'HomeController@send');
+// Route::post('/mail', 'HomeController@sendEmail');
+
+Route::controller('/', 'HomeController');

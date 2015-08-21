@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 // use Illuminate\Http\Request;
 use App\Http\Requests\CreateEntryRequest;
+use App\Http\Requests\SendEmailRequest;
 
 // use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Entry;
 use Request;
+use Mail;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function getIndex()
 	{
 		return view('tab');
 	}
@@ -27,24 +29,26 @@ class HomeController extends Controller
                                 ]);
 	}
 
-	public function send(SendEmailRequest $request)
+	public function postShareByEmail(SendEmailRequest $request)
 	{
-	    $input = $request->all();
-	    dd($input);
+	    $data = $request->all();
 
-	    Mail::send('emails.email', array(
-	            'name' => $request->get('name'),
-	            'email' => $request->get('email'),
-	            'user_message' => $request->get('user_message')
-	        ), function($message)
-	    {
-	        $message->from('*********@gmail.com');
-	        $message->to('********@gmail.com', 'Admin')->subject('Client Inquiry');
-	    });
+	    // dd($data);
+
+	    $myemail = $request->get('myemail');
+	    $hisemail = $request->get('hisemail');
+		$body = nl2br($request->get('message'));
+		print_r($body);
+
+	    Mail::send('emails.share', ['body' => $body], function ($message) use ($myemail, $hisemail, $body) {
+            $message->from($myemail);
+            $message->to($hisemail);
+            $message->subject('Test email');
+        });
 
     	return response()->json([
     							  'status' => 'OK'
-                                , 'message' => 'Formul nu a fost completat'
+                                , 'message' => 'Formularul nu a fost completat'
                                 ]);
 	}
 }

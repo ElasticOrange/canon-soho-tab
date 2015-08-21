@@ -88,12 +88,12 @@
 
         <div id="modal-background"></div>
         <div class="modal">
-            <form action="/mail" data-modal="true" method="post"><br />
+            <form action="{{ action('HomeController@postShareByEmail') }}" data-modal="true" method="post"><br />
                 <a class="boxclose" id="boxclose"></a>
                 <input type="email" data-mymodal="true" class="mailsend" name="myemail" placeholder="Adresa mea de email"><br /><br />
                 <input type="email" data-hismodal="true" class="mailsend" name="hisemail" placeholder="Adresa de email a destinatarului">
                 <div class="grey"><span class="grey-mesaj">Mesaj</span></div>
-                <textarea class="msg-body">
+                <textarea class="msg-body" name="message">
 Salut,
 
 Am găsit promoția Canon pentru echipamente laser și scannere mobile,
@@ -116,6 +116,7 @@ https://apps.facebook.com/promotie-soho
 
         <script src="/js/form.js"></script>
         <script src="/js/sendemail.js"></script>
+
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-55513824-6']);
