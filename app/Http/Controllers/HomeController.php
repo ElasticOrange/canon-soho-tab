@@ -43,7 +43,7 @@ class HomeController extends Controller
 	    Mail::send('emails.share', ['body' => $body], function ($message) use ($myemail, $hisemail, $body) {
             $message->from($myemail);
             $message->to($hisemail);
-            $message->subject('Test email');
+            $message->subject('Soluțiile Canon pentru un business flexibil');
         });
 
     	return response()->json([
