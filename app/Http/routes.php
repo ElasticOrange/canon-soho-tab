@@ -12,10 +12,11 @@
 */
 
 // Route::get('/', 'HomeController@index');
-// // Route::post('/', 'HomeController@index');
+// // Route::post('/', 'HomeController@getIndex');
 
 // Route::post('/', 'HomeController@postIndex');
 
 // Route::post('/mail', 'HomeController@sendEmail');
 
 Route::controller('/', 'HomeController');
+Route::post('/', 'HomeController@getIndex');
