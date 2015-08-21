@@ -18,5 +18,11 @@
 
 // Route::post('/mail', 'HomeController@sendEmail');
 
-Route::controller('/', 'HomeController');
+// Route::controller('/', 'HomeController');
+
+Route::get('/', 'HomeController@getIndex');
 Route::post('/', 'HomeController@getIndex');
+
+Route::post('/', 'HomeController@postIndex');
+
+Route::post('/share-by-email', 'HomeController@postShareByEmail');
