@@ -33,11 +33,11 @@
                 <img src="/img/shareemail.png">
             </div>
             <div class="fb-button">
-                <div class="fb-share-button" data-href="https://www.facebook.com/canonromania" data-layout="button"></div>
+                <div class="fb-share-button" data-href="https://www.facebook.com/canonromania/app_1623647431227519" data-layout="button"></div>
             </div>
 
             <div class="tw-button">
-                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                <a href="https://twitter.com/share?url=https://www.facebook.com/canonromania/app_1623647431227519" class="twitter-share-button">Tweet</a>
             </div>
 
             <img class="premii" src="/img/premii.png">
