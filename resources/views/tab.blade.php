@@ -53,8 +53,8 @@
 
             <p class="text-norm par1">Atingerea obiectivelor propriei afaceri stă în mâinile echipe tale.</p>
             <p class="text-norm par2">Echipamentele pot face diferenta. Alege Canon si poti beneficia de solutia perfectă.</p>
-            <p class="text-norm par3">În plus, pentru produsele achizitionate din gama imprimantelor laser si scannerelor mobile vei primi,
-            la alegere, un router wifi sau un rucsac. Mai multe detalii în magazinele partenere Canon.</p>
+            <p class="text-norm par3">În plus, pentru produsele achiziţionate din gama imprimantelor laser şi
+            scannerelor mobile vei primi un router wifi sau un rucsac. Mai multe detalii în magazinele partenere Canon.</p>
 
             <div class="stripe-red"></div>
 
