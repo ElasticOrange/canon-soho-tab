@@ -11,7 +11,7 @@ $(document).ready(function() {
             contact: $('[data-checkbox=true]').is(':checked') ? 1 : 0,
             };
         return $.ajax(
-            {   
+            {
                 url: $('[data-form=true]').attr('action'),
                 type: $('[data-form=true]').attr('method'),
                 data: p,
@@ -24,6 +24,7 @@ $(document).ready(function() {
                         $('div.form-inscriere').hide();
                         $('.invizibil').show();
                         console.log("OK");
+                        _gaq.push(['_trackEvent', 'inscriere', 'succes']);
                     }
                     else
                     {
@@ -33,7 +34,7 @@ $(document).ready(function() {
                 error: function(p)
                 {
                     $('.form-control').removeClass("warning");
-                    
+
                     if (typeof p.responseJSON.nume != 'undefined')
                     {
                         console.log('Nu exista nume');
@@ -45,7 +46,7 @@ $(document).ready(function() {
                         $('[data-email=true]').addClass("warning");
                         console.log('Nu exista email');
                     }
-                    
+
                     console.log(p);
                 },
             });
