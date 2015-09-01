@@ -119,7 +119,7 @@ https://apps.facebook.com/promotie-soho
 
         <script type="text/javascript">
           var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-55513824-6']);
+          _gaq.push(['_setAccount', 'UA-55513824-7']);
           _gaq.push(['_trackPageview']);
           (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
