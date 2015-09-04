@@ -48,7 +48,7 @@
 
             <span class="text-bulina">Cadou router wifi sau rucsac</span>
 
-            <p class="big-text">Aleg să-mi urmez visele.</p>
+            <p class="big-text">Aleg să-mi urmez visurile.</p>
             <p class="big-text-sec">Alegerea mea este Canon.</p>
 
             <p class="text-norm par1">Atingerea obiectivelor propriei afaceri stă în mâinile echipe tale.</p>
